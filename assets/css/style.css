@@ -1,0 +1,431 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+/* header */
+header{
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 20px;
+}
+/* nav links */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    color: #fff;
+}
+.logo h2 .clr-black{
+    color: black;
+}
+nav .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 15px;
+}
+ul li a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+ul li a:hover{
+    color:black;
+}
+.btn button{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    box-shadow: 2px 0 3px 3px rgba(0,0,0,0.2);
+}
+.btn button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* banner content */
+.banner{
+    height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+.banner .content{
+    flex-basis: 50%;
+    color: #fff;
+}
+.content h1{
+    margin-bottom: 25px;
+}
+.content p{
+    line-height: 1.75;
+    text-align: justify;
+    margin-bottom: 35px;
+}
+.btns button{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 2px 0 3px 3px rgba(0,0,0,0.2);
+}
+
+.banner .banner-img{
+    flex-basis: 50%;
+}
+.banner-img img{
+    width: 100%;
+    background-size: cover;
+}
+
+/* main */
+main {
+    padding: 40px 50px;
+    background: #f0f0f0;
+}
+/* about */
+.about-content {
+    margin-bottom: 40px;
+}
+.about-content h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-us{
+    flex-basis: 60%;
+    padding: 10px;
+}
+.about-us p{
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+/* services */
+.services{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.services h2{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: end;
+}
+.service-card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 150px;
+    max-width: 600px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.service-card .service-img{
+    flex-basis: 30%;
+    width: 100%;
+}
+.service-img img{
+    width: 100px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.service-card .service-content{
+    flex-basis: 70%;
+    text-align: justify;
+}
+.service-content h3{
+    margin-bottom: 8px;
+}
+
+/* plans */
+.plan{
+    margin-bottom: 50px;
+}
+.plan h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.all-plans{
+    display: flex;
+    flex-wrap: wrap;
+}
+.all-plans .plan-card{
+    flex-basis: 31%;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+.plan-card h3{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.plan-card .planing{
+    background-color: #ff5733;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.plan-card h4{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+/* reviews */
+.testimonial .testi-title h2{
+    font-size: 2rem;
+    margin-bottom: 30px;   
+}
+.wrapper{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper .box{
+    background: #fff;
+    flex-basis: 100%;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+.wrapper .box i.quote{
+    font-size: 20px;
+    color: #17a2b8;
+}
+.wrapper .box p{
+    text-align: justify;
+}
+.wrapper .box .testi-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.box .info .name{
+    font-weight: 600;
+    font-size: 17px;
+}
+.box .info .stars{
+    margin-top: 2px;
+}
+.box .info .stars i{
+    color: #ff5733;
+}
+.box .testi-content .testi-img{
+    height: 75px;
+    width: 75px;
+    padding: 3px;
+    background: #ff5733;
+    border-radius: 50%;
+}
+.testi-content .testi-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+  .box:hover .testi-content .testi-img img{
+    border-color: #fff;
+}
+.contact{
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.contact h2{
+    font-size: 2rem;
+    padding: 20px 40px;
+}
+.contact svg{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.contact-us{
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-us p{
+    font-weight: 600;
+    line-height: 1.7;
+}
+.subscribe{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.subscribe input {
+    padding: 10px;
+    width: 500px;
+    border: 2px solid #ff5733;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.subscribe button {
+    padding: 10px;
+    border: 2px solid #ff5733;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ff5733;
+    color: white;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+.subscribe button:hover {
+    background-color: #e93e17;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+}
+/* media queries */
+@media  screen and (max-width:1130px) {
+    .banner .content{
+        flex-basis: 100%;
+    }
+    .banner .content h1{
+        font-size: 3rem;
+    }
+    .banner .content p{
+        font-size: 1rem;
+    }
+    .banner .banner-img{
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner-img img{
+        width: 60%;
+    }
+
+    .about-us{
+        flex-basis: 100%;
+    }
+    .services{
+        flex-basis: 100%;
+    }
+    .service-card{
+        width: 100%;
+    }    
+}
+@media screen and (max-width: 935px) and (orientation: landscape) {
+    .banner .content h1{
+        font-size: 2rem;
+    }
+    .service-card{
+        width: 100%;
+    } 
+    .all-plans .plan-card{
+        flex-basis: 100%;
+    }
+    svg{
+        display: none;
+    }
+}
+@media screen and (max-width:765px){
+    .banner .content h1{
+        font-size: 1.2rem;
+    }
+    .banner .content p{
+        font-size: 0.8rem;
+    }
+    svg{
+        display: none;
+    }
+    .nav-links{
+        display: none;
+    }
+    .all-plans .plan-card{
+        flex-basis: 100%;
+    }
+    .subscribe input{
+        width: 300px;
+    }
+}
+@media screen and (max-width:500px){
+    .contact{
+        height: 65vh;
+    }
+    .subscribe input{
+        width: 150px;
+    }
+    .service-card{
+        height: 250px;
+    }
+    .service-card .service-img{
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-card .service-content{
+        flex-basis: 100%;
+    }
+    footer h3{
+        font-size: 1rem;
+    }
+}
